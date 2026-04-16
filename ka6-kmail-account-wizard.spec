@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.12.3
+%define		kdeappsver	26.04.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kmail-account-wizard
 Summary:	kmail-account-wizard
 Name:		ka6-%{kaname}
-Version:	25.12.3
-Release:	2
+Version:	26.04.0
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	bdd3c2f0129d315c6e4a37e3374d49a9
+# Source0-md5:	41b5d2210acb8a988b08e8ba040df6ce
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel
