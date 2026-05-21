@@ -43,7 +43,11 @@ Obsoletes:	ka5-%{kaname} < %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Kmail account wizard.
+Application which assists you with the configuration of accounts in
+KMail.
+
+%description -l pl.UTF-8
+Aplikacja, która wspomaga Cię w konfguracji kont w KMailu.
 
 %prep
 %setup -q -n %{kaname}-%{version}
