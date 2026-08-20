@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	26.04.3
-%define		kframever	5.94.0
+%define		kdeappsver	26.08.0
+%define		kframever	6.29.0
 %define		qtver		5.15.2
 %define		kaname		kmail-account-wizard
 Summary:	kmail-account-wizard
 Name:		ka6-%{kaname}
-Version:	26.04.3
+Version:	26.08.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	03fede9b9a6d87e1aa238382754bedb3
+# Source0-md5:	0f47934c1874f58370793a446f177ab4
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel
@@ -24,13 +24,13 @@ BuildRequires:	gettext-tools
 BuildRequires:	ka6-akonadi-devel >= %{kdeappsver}
 BuildRequires:	ka6-kidentitymanagement-devel >= %{kdeappsver}
 BuildRequires:	ka6-kmailtransport-devel >= %{kdeappsver}
-BuildRequires:	ka6-kmime-devel >= %{kdeappsver}
 BuildRequires:	kf6-extra-cmake-modules >= %{kframever}
 BuildRequires:	kf6-kcrash-devel >= %{kframever}
 BuildRequires:	kf6-kdbusaddons-devel >= %{kframever}
 BuildRequires:	kf6-kdoctools-devel >= %{kframever}
 BuildRequires:	kf6-ki18n-devel >= %{kframever}
 BuildRequires:	kf6-kio-devel >= %{kframever}
+BuildRequires:	kf6-kmime-devel >= %{kframever}
 BuildRequires:	ninja
 BuildRequires:	qt6-build >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.164
